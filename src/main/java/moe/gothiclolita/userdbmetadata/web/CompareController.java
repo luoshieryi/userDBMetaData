@@ -13,8 +13,8 @@ public class CompareController {
     private final CompareService userService;
 
     @GetMapping("/compare")
-    public void compare() {
-        userService.compare();
+    public String compare() throws Exception {
+        return userService.compare();
     }
 
 }
